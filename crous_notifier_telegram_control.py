@@ -14,7 +14,8 @@ CROUS_ZONES = [
     ("https://trouverunlogement.lescrous.fr/tools/41/search?bounds=2.1506369_48.8306292_2.2009522_48.8122992", "villedavray"),
     ("https://trouverunlogement.lescrous.fr/tools/41/search?bounds=2.2235812_48.817031_2.2799362_48.7744568", "clamart"),
     ("https://trouverunlogement.lescrous.fr/tools/41/search?bounds=2.1785404_48.835385_2.2327393_48.8091299", "sevres"),
-    ("https://trouverunlogement.lescrous.fr/tools/41/search?bounds=2.224122_48.902156_2.4697602_48.8155755", "paris")
+    ("https://trouverunlogement.lescrous.fr/tools/41/search?bounds=2.224122_48.902156_2.4697602_48.8155755", "paris"),
+    ("https://trouverunlogement.lescrous.fr/tools/41/search?bounds=1.4462445_49.241431_3.5592208_48.1201456", "ile de france")
 ]
 CHECK_INTERVAL = 150
 TELEGRAM_BOT_TOKEN = "7419377967:AAF3v-oUKBhjIaGbmGk7eAi6YErzGkyoLvc"
@@ -87,7 +88,7 @@ def send_telegram_message(url, label):
         )
 
 def aucun_logement(html):
-    return "Aucun logement trouvé" in html or "Aucune résidence disponible" in html or "Erreur de connexion"
+    return "Aucun logement trouvé" in html or "Aucune résidence disponible" in html
 
 def main_loop():
     subprocess.run(["playwright", "install", "chromium"], check=True)
