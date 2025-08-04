@@ -42,15 +42,15 @@ def telegram_webhook():
         pause = not pause
         response = "⏸️ Pause activée" if pause else "▶️ Reprise"
     elif message == "/info":
-    response = (
-        "📖 *Commandes disponibles* :\n"
-        "/pause – Met en pause / reprend la recherche 🔄\n"
-        "/mute – Active / désactive le son 🔕🔔\n"
-        "/status – Affiche l’état actuel du bot 📊\n"
-        "/disable <id> – Stoppe une zone (ex : /disable 2) ❌\n"
-        "/enable <id> – Relance une zone (ex : /enable 2) ✅\n"
-        "/info – Affiche cette aide 📋"
-    )
+        response = (
+            "📖 *Commandes disponibles* :\n"
+            "/pause – Met en pause / reprend la recherche 🔄\n"
+            "/mute – Active / désactive le son 🔕🔔\n"
+            "/status – Affiche l’état actuel du bot 📊\n"
+            "/disable <id> – Stoppe une zone (ex : /disable 2) ❌\n"
+            "/enable <id> – Relance une zone (ex : /enable 2) ✅\n"
+            "/info – Affiche cette aide 📋"
+        )
     elif message == "/mute":
         mute = not mute
         response = "🔕 Muet activé" if mute else "🔔 Notifications activées"
