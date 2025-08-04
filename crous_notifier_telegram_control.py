@@ -18,8 +18,8 @@ CROUS_ZONES = [
     ("https://trouverunlogement.lescrous.fr/tools/41/search?bounds=1.4462445_49.241431_3.5592208_48.1201456", "ile de france")
 ]
 CHECK_INTERVAL = 150
-TELEGRAM_BOT_TOKEN = "7419377967:AAF3v-oUKBhjIaGbmGk7eAi6YErzGkyoLvc"
-TELEGRAM_CHAT_ID = "6053608629"
+TELEGRAM_BOT_TOKEN = "8366194077:AAGRKgqDM1aGlkiCHMU6cd2Lik9dDnVfxSw"
+TELEGRAM_CHAT_ID = "7153765069"
 
 # State variables
 pause = False
