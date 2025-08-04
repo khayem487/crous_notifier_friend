@@ -5,7 +5,8 @@
       }
     },
     "deploy": {
-      "startCommand": "python crous_friend_notifier_telegram.py"
+      "startCommand": "python crous_notifier_telegram_control.py"
     }
   }
+
   
