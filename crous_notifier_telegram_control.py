@@ -7,10 +7,14 @@ from flask import Flask, request
 
 # === CONFIG ===
 CROUS_ZONES = [
-    ("https://trouverunlogement.lescrous.fr/tools/41/search?bounds=2.0362453_49.0338281_2.0845719_49.00172", "95000"),
-    ("https://trouverunlogement.lescrous.fr/tools/41/search?bounds=1.9999694_49.0564525_2.0911198_49.017998", "cergy"),
-    ("https://trouverunlogement.lescrous.fr/tools/41/search?bounds=2.224122_48.902156_2.4697602_48.8155755", "paris"),
-    ("https://trouverunlogement.lescrous.fr/tools/41/search?bounds=2.0721836_49.0731128_2.1270334_49.024178", "pontoise")
+    ("https://trouverunlogement.lescrous.fr/tools/41/search?bounds=2.0699384_48.82861_2.1683504_48.7792297", "versailles"),
+    ("https://trouverunlogement.lescrous.fr/tools/41/search?bounds=2.1618073_48.7986499_2.2292168_48.7691721", "velizy"),
+    ("https://trouverunlogement.lescrous.fr/tools/41/search?bounds=1.8948052_48.7856651_1.9553357_48.7567725", "maurepas"),
+    ("https://trouverunlogement.lescrous.fr/tools/41/search?bounds=1.9692819_48.7997591_2.0240095_48.7479789", "trappes"),
+    ("https://trouverunlogement.lescrous.fr/tools/41/search?bounds=2.1506369_48.8306292_2.2009522_48.8122992", "villedavray"),
+    ("https://trouverunlogement.lescrous.fr/tools/41/search?bounds=2.2235812_48.817031_2.2799362_48.7744568", "clamart"),
+    ("https://trouverunlogement.lescrous.fr/tools/41/search?bounds=2.1785404_48.835385_2.2327393_48.8091299", "sevres"),
+    ("https://trouverunlogement.lescrous.fr/tools/41/search?bounds=2.224122_48.902156_2.4697602_48.8155755", "paris")
 ]
 CHECK_INTERVAL = 150
 TELEGRAM_BOT_TOKEN = "7419377967:AAF3v-oUKBhjIaGbmGk7eAi6YErzGkyoLvc"
